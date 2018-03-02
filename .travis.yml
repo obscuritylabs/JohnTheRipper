@@ -1,0 +1,11 @@
+sudo: required
+dist: trusty
+
+services:
+  - docker
+
+jobs:
+  include:
+    - stage: build docker image and push
+      script:
+      - ./build.sh
