@@ -1,11 +1,13 @@
 sudo: required
 dist: trusty
-
 services:
-  - docker
-
+- docker
 jobs:
   include:
-    - stage: build docker image and push
-      script:
-      - ./build.sh
+  - stage: build docker image and push
+    script:
+    - "./build.sh"
+env:
+  global:
+  - secure: P2F7pcGEB3S4cAjARd61rQPaz5LyM9/QLLuLvRyn47fo5CqDlhIgUy5vK9pgT3Ogy3rV0aw4e+XB/kdplIzzI18uM4P+REGivBYndMi/zBvLwVsX+l05mRPqbLwbzgIYoQii18zVuLI2FZ5PgXX1HOGvGtpqgRxqsdkSmoGbAi5YFo82UvoJjIufnSxn3Q9xPhHtpTpwucgjYzuG+SK39uGxeptSBCPTlTDqip+vseUd6uRBcBoeogHqxy5QTh9eF4svQTbgF16DifpadjQVoIoUFZwjic6rBl46ulhxIdsDODWO2/6K+3+kH54QyTfI77bnml4W+PBZyMAhcta/l9zMAGWKrxrq9wfj21LSk2SLjt7QzAG8J4jMDOPGGLiHcDCnfvzSzzqeCsBY68vlM4LpUmPzLCLHLHyGU9fr61AOKnaJnP5sMZA3J6idYZKcaqvLEw5T7THZwHrfSiJY3s1/Kil+dhcTtn1GKzBbJW6qk4FpCRSYnmHhNL86ufDl66HGMK3qjGrJqszV+NLVEuhWBu9k7cTPUF7EqNt0fHAMtzSSlFzS2X4bJ3o7DH/MPWJnQKkt2qOvdCp61pm5z4GjezjfCiwAbjc2fSsyYHf1oU9HgS3dTlSjGxpKg9Elh1cIPXScOcU5/6bhA8CICSTS5udhVGa7JJtB/IeK2II=
+  - secure: NZzgdTfV7H8oxqsVBYD8DwoDsDRSS24oxOdMPeODv+cSqaOw1SgYXjN3zUHt8n3keSohfNC1sAtg0u/jY62wLHINsJ+GYrUQHVi6ygyXWkzYkhUWX6/oA4suKyb98oH05BUEUeF7DZzTqWVge+00TlWTvjZa/EgnnnELiSIFIDQLtZrLaLfhteTY9M+Rf5/rlHpjeyxfsh4ZDPj/vqcRn6DP8PvXPpf8BF0ub3z1LIA1FAd7ihD+yCPwbwMzz3CaqodfuHf4w+/2BhNkgK76LxO+c/m5Ql4Qf1391ACryy1SjOGPdW0O9EHlhRCjZwArLXfkbLdxTd5RTt2t9Lb9CH7etStUbAYYJnnYWrllWGcgRyBJ60aLFI8GmICZaXOXUsZ5qZHy206y7gMocg/lyfl4Jmvi3RAuMwPfFsJOIzLX70kvFCNoONaV2KVyICcTRD3BClGBejWHxPzVpxl8pQ3ZcVqwCHxDfRwHZB4T5T42mGEGTk/vk3HsbMNU6/ULfwqTT81CCtSApxM0ySDhEbu73eaMdTIujRMA7cdHePrlZKfMwai/HXN0U9bJ+MRjEowQvGw/d2mBH9fqbN3aIOeny1BTXvp3qm9xwDJpeVrQCDdjGExQscWd4NiipK5iqy0LIzX8iSbPbmTx7sOGaJMso1r+A7OcsLB4A4Bcelw=
