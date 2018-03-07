@@ -5,9 +5,9 @@ Docker + Travis-CI + JohnTheRipper(Jumbo) = Bleeding edge builds]
 # Usage
 
 ### Go Interactive With Container
-'''
+```
 docker run -ti --entrypoint bash obscuritylabs/johntheripper
-'''
+```
 
 ## Continuous Integration Implementation 
 This repo get built at 12 AM daily via a Travis CI Cron Job:
