@@ -4,9 +4,20 @@ Docker + Travis-CI + JohnTheRipper(Jumbo) = Bleeding edge builds]
 
 # Usage
 
-### Go Interactive With Container
+### Start Cracking Job
+First start container, name it, and mount volume.
 ```
-docker run -ti --entrypoint bash obscuritylabs/johntheripper
+$ docker run --name=john -d -v ~/cracking:/opt/cracking -ti --entrypoint bash obscuritylabs/johntheripper
+```
+Enter image 
+```
+docker exec -ti john bash
+```
+
+### Go Interactive With Container
+
+```
+$ docker run -ti --entrypoint bash obscuritylabs/johntheripper
 ```
 
 ## Continuous Integration Implementation 
